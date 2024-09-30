@@ -1,4 +1,5 @@
 using CLDV6212POEPART1.Models;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace CLDV6212POEPART1
 {
@@ -11,11 +12,14 @@ namespace CLDV6212POEPART1
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            // Register your custom services
+            // Register custom services
             builder.Services.AddSingleton<BlobService>();
             builder.Services.AddSingleton<TableService>();
             builder.Services.AddSingleton<QueueService>();
             builder.Services.AddSingleton<FileService>();
+
+            // Register HttpClient for Azure Functions
+            builder.Services.AddHttpClient();
 
             var app = builder.Build();
 
