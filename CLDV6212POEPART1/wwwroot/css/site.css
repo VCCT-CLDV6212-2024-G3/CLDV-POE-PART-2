@@ -1,0 +1,262 @@
+/* General Styles */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f1f8;
+    color: #333;
+    margin-bottom: 60px;
+    padding: 20px;
+    position: relative;
+    min-height: 100%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+    .logo-container img {
+        max-width: 150px;
+        height: auto;
+        display: inline-block;
+    }
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #0073e6;
+}
+
+form {
+    margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="file"]:focus {
+        border-color: #0073e6;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 115, 230, 0.3);
+    }
+
+button {
+    background-color: #0073e6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #005bb5;
+    }
+
+    button:focus,
+    button:active:focus {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #0073e6;
+    }
+
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #0073e6;
+}
+
+footer {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+/* About Us Styles */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    width: 100%;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
+}
+
+/* Ensuring responsiveness for the image and text */
+@media (min-width: 1000px) {
+    .about-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .about-image {
+        max-width: 50%; /* Reduced width of the image */
+        margin-right: 15px; /* Slightly reduced margin */
+    }
+
+    .about-text {
+        max-width: 100%; /* Increased width of the text container */
+    }
+}
+
+/* Home Page Styles */
+.container {
+    max-width: 1000px;
+}
+
+.home-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    .home-intro h1 {
+        font-size: 26px;
+        margin-bottom: 15px;
+        color: #0073e6;
+    }
+
+    .home-intro p {
+        font-size: 14px;
+        color: #333;
+    }
+
+.home-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-item {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feature-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #333;
+}
+
+.home-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+    .home-cta h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #0073e6;
+    }
+
+    .home-cta p {
+        font-size: 14px;
+        color: #333;
+    }
+
+.cta-button {
+    background-color: #0073e6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+    .cta-button:hover {
+        background-color: #005bb5;
+    }
+
+footer {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    footer p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
