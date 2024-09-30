@@ -93,7 +93,7 @@ namespace CLDV6212POEPART1.Controllers
             {
                 return RedirectToAction("Index");
             }
-
+        
             return BadRequest("Failed to store table info.");
         }
 
